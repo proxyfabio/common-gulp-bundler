@@ -1,0 +1,54 @@
+{
+  "name": "common-gulp-bundler",
+  "version": "0.1.0",
+  "description": "Common multipage bundler",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/proxyfabio/common-gulp-bundler.git"
+  },
+  "keywords": [
+    "gulp",
+    "bundler"
+  ],
+  "author": "proxyfabio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/proxyfabio/common-gulp-bundler/issues"
+  },
+  "homepage": "https://github.com/proxyfabio/common-gulp-bundler",
+  "devDependencies": {
+    "browserify": "^6.3.3",
+    "browserify-shim": "^3.8.1",
+    "coffee-reactify": "^2.1.0",
+    "coffee-script": "^1.8.0",
+    "gulp": "^3.8.10",
+    "gulp-changed": "^1.0.0",
+    "gulp-cssmin": "^0.1.6",
+    "gulp-jshint": "^1.9.0",
+    "gulp-less": "^2.0.1",
+    "gulp-load-plugins": "^0.8.0",
+    "gulp-notify": "^2.0.1",
+    "gulp-size": "^1.1.0",
+    "gulp-sourcemaps": "^1.2.8",
+    "gulp-uglifyjs": "^0.5.0",
+    "gulp-util": "^3.0.1",
+    "minimist": "^1.1.0",
+    "path": "^0.4.9",
+    "pretty-hrtime": "^0.2.2",
+    "require-dir": "^0.1.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.0.0",
+    "watchify": "^2.1.0"
+  },
+  "browserify-shim": "./shim.js",
+  "browserify": {
+    "transform": [
+      "browserify-shim",
+      "coffee-reactify"
+    ]
+  }
+}
